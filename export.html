@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <script async src="https://arc.io/widget.min.js#C5tJKq6m"></script>
         <title>GBA Games</title>
          <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PS49ZXBGRW"></script>
@@ -22,29 +21,29 @@
         <meta name = viewport content = "width = device-width, initial-scale = 1">
 
         <link rel="stylesheet" href="user_css/index.css">
-    </head>
-    <nav> 
-      <div class="wrappers">
-      <p class="main-div main-div2"><a href="settings.html">Settings!</a></p>
-      <p class="main-div main-div2"><a href="index_beta.html">Favorite Games</a></p>
-      <p class="main-div main-div2"><a href="https://discord.gg/nZrabh4cgH">Want more games?</a></p>
-    </div>
-    </nav>
+</head>
+
+
     <body>
+
+        
         <h2>Retro Emulator!</h2>
         <main>
-        <div class="favirotes-bar">
-                <div class="favorites-bar__item">
-                <div class="space-frame"></div>
-                 <span id="frame-wrapper"> <a href="#" class="button-frame frame-three" onclick="setFavs();">Confirm Favorite.</a> <a href="" class="button-frame frame-three" onclick="theyClearFavs();">Clear All</a> <a href="index.html" class="button-frame frame-three">Return home</a></span>
-                 <div id="favorite-bar-text"></div>
-                    <p>This system is mostly out of beta now, it will be left alone unless a major site-layout or other rework is done.</p>
-                    <p>You can only add a favorite if coming from game page.</p>
-                </div>
-            </div>
+
+        <h1>Data Export/Import</h1>
+        <p>This system is in a very early beta, for now you can only load custom host provider, and all other saved hosting data. You can download all your saved data (favorites, theme and more) but only load the host data for now.</p>
+          <a style="cursor: pointer;" onclick="userConfig1();">Download User Config</a>
+
+          
+          <p>Upload User Config below</p> <input class="menu" id="file" type="file" />
+
+          <input type="checkbox" id="swapSet" style="display: none;" />
 </main>
+
+
   </body>
     <script src="data/js/type.js"></script>
     <script src="user_scripts/theme.js"></script>
-    <script src="data/js/favorite.js"></script>
+    <script src="data/js/config/userconfig.js"></script>
+    <script src="data/js/config/loadconfig.js"></script>
 </html>
