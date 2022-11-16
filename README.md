@@ -24,5 +24,7 @@ Github profiles:
 
 [JavaScythe](https://github.com/javascythe)
 
+[EmulatorJS](https://github.com/EmulatorJS/EmulatorJS)
+
 
 ### [Ultimate Guide to Contributing to the New Emulator!](emulatorjs/docs/UltimateGuide.md)
