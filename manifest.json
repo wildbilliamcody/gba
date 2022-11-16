@@ -116,7 +116,7 @@
   "protocol_handlers": [
     {
       "protocol": "web+gba",
-      "url": "/launchpad.html?gameID=%s&gametitle=%s&fav=%s"
+      "url": "/gba.html"
     },
     {
       "protocol": "web+nes",
