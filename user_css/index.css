@@ -1146,6 +1146,8 @@ a {
 .fav-border-style {
   border: 3px solid #3e1687;
   border-radius: 15px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
   padding: 10px;
   margin-bottom: 7px;
 }
