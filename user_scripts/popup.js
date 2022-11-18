@@ -1,5 +1,4 @@
 let doPopup = false; 
-
 if (/\bCrOS\b/.test(navigator.userAgent)) {
     doPopup = true;
 } else {
@@ -27,11 +26,6 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
@@ -43,4 +37,26 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+}
+
+function surveyCheck() {
+    let showAgain = true;
+    showAgain = JSON.parse(localStorage.getItem("showAgain"));
+    let userOS = JSON.parse(localStorage.getItem("userOS"));
+    if (userOS == 1) {
+      if (showAgain == true) {
+        surveyBuild();
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block";
+      }
+    }
+}
+surveyCheck();
+surveyInitialize();
+
+function dontShowAgain() {
+    let showAgain = false;
+    localStorage.setItem("showAgain", JSON.stringify(showAgain));
+    var modal = document.getElementById("myModal");
+        modal.style.display = "none";
 }
