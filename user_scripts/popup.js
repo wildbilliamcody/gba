@@ -1,4 +1,11 @@
-let doPopup = false; 
+let doPopup = false;
+let showAgain = true;
+let showAgainStuffDat = localStorage.getItem("showAgainStuff");
+if (showAgainStuffDat == "true") {
+    let test123 = localStorage.getItem("showAgain");
+    showAgain = JSON.parse(test123);
+}
+let showAgainStuff = JSON.parse(showAgainStuffDat);
 if (/\bCrOS\b/.test(navigator.userAgent)) {
     doPopup = true;
 } else {
@@ -40,8 +47,6 @@ window.onclick = function(event) {
 }
 
 function surveyCheck() {
-    let showAgain = true;
-    showAgain = JSON.parse(localStorage.getItem("showAgain"));
     let userOS = JSON.parse(localStorage.getItem("userOS"));
     if (userOS == 1) {
       if (showAgain == true) {
@@ -56,6 +61,8 @@ surveyInitialize();
 
 function dontShowAgain() {
     let showAgain = false;
+    showAgainStuff = true;
+    localStorage.setItem("showAgainStuff", JSON.stringify(showAgainStuff));
     localStorage.setItem("showAgain", JSON.stringify(showAgain));
     var modal = document.getElementById("myModal");
         modal.style.display = "none";
