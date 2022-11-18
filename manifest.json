@@ -116,19 +116,19 @@
   "protocol_handlers": [
     {
       "protocol": "web+gba",
-      "url": "/gba.html"
+      "url": "gba.html"
     },
     {
       "protocol": "web+nes",
-      "url": "/nes.html"
+      "url": "nes.html"
     },
     {
       "protocol": "web+snes",
-      "url": "/snes.html"
+      "url": "snes.html"
     },
     {
       "protocol": "web+sega",
-      "url": "/segaMD.html"
+      "url": "segaMD.html"
     }
 ]
 }
