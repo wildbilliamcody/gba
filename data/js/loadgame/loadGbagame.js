@@ -367,6 +367,8 @@ const gameNameTypeID =
 '../gba-host/gba-alt/zelda_past.gba',
 '../gba-host/gba-alt/007.gba',
 '../gba-host/gba-alt/Pokemon_Emerald_Rogue_EX_(v1.2.1).gba',
+`../gba-host/gba-alt/Pokemon-Radical-Red-v3.1.gba`,
+'../gba-host/gba-alt/Fusion-3-Red-Blue.gba'
 
 
 
