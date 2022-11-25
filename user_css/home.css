@@ -246,6 +246,8 @@ color: var(--bg-color);
 
 
 .gba-tile-wrap {
+    display: table;
+  margin: 0 auto;
 }
 
 
@@ -265,12 +267,8 @@ color: var(--bg-color);
 
 
 .wrapper-tile-1 {
-    float: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 27%;
-    margin-bottom: 1%;
+	width:100%;
+	margin-bottom: 1%;
 }
 
 .tile-text {
@@ -333,11 +331,7 @@ text-decoration: underline;
 
 
 .wrapper-tile {
-    float: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 27%;
+	width:100%;
 }
 
 .tile-text-1 {
