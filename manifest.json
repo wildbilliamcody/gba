@@ -95,7 +95,7 @@
     },
     {
         "name":"Sega Genesis Emulator",
-        "url":"segaMS.html",    
+        "url":"segaMD.html",    
         "description":"Our Sega Genesis games",
         "icons": [{ "src": "pwa/manifest-icon-96.png", "sizes": "96x96" }]
     },
@@ -111,24 +111,7 @@
     "kids",
     "lifestyle",
     "productivity"
-],
-
-  "protocol_handlers": [
-    {
-      "protocol": "web+gba",
-      "url": "gba.html"
-    },
-    {
-      "protocol": "web+nes",
-      "url": "nes.html"
-    },
-    {
-      "protocol": "web+snes",
-      "url": "snes.html"
-    },
-    {
-      "protocol": "web+sega",
-      "url": "segaMD.html"
-    }
 ]
+
+
 }
