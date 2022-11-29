@@ -2,10 +2,7 @@ let isCheck = 0;
 let is1Check = 0;
 let isNet = 0;
 let doOldCores = false;
-let gameId = 0;
 
-let gameIdDat = localStorage.getItem("gameID");
-gameId = JSON.parse(gameIdDat);
 let isNetDat = localStorage.getItem("isNet");
 isNet = JSON.parse(isNetDat);
 
