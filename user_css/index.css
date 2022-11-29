@@ -863,6 +863,41 @@ a.button-frame.frame-three:hover:after{
   transition: 0.3s ease all;
 }
 
+/* Button 1 */
+#button-3 .knobs:before {
+  content: "OFF";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 23px;
+  height: 10px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #f4a803;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-3 .checkbox:checked + .knobs:before {
+  content: "ON";
+  left: 42px;
+  background-color: #0051ca;
+}
+
+#button-3 .checkbox:checked ~ .layer {
+  background-color: #fcebeb;
+}
+
+#button-3 .knobs,
+#button-3 .knobs:before,
+#button-3.layer {
+  transition: 0.3s ease all;
+}
+
 
 .button-cover1 {
   text-align: center;
@@ -921,6 +956,40 @@ a.button-frame.frame-three:hover:after{
 
 /* Button 1 */
 #button-2 .knobs1:before {
+  content: "OFF";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 23px;
+  height: 10px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #d04b41;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-2 .checkbox:checked + .knobs1:before {
+  content: "ON";
+  left: 42px;
+  background-color: #458d46;
+}
+
+#button-2 .checkbox:checked ~ .layer1 {
+  background-color: #fcebeb;
+}
+
+#button-2 .knobs1,
+#button-2 .knobs1:before,
+#button-2 .layer1 {
+  transition: 0.3s ease all;
+}
+
+/* Button 1 */
+#button-4 .knobs1:before {
   content: "OFF";
   position: absolute;
   top: 4px;

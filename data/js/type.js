@@ -71,4 +71,3 @@ function embedCopy() {
     alert("Copied embed to clipboard: " + copyData.value);
     
 }
-
