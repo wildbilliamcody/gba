@@ -924,7 +924,8 @@ const gameNameTypeID =
 '../gba-host/snes-alt/Zombies_Ate_My_Neighbors_(Reverse_Inventory_Cycling).zip',
 '../gba-host/snes-alt/Zombies_Ate_My_Neighbors_-_Dr._Tongues_Revenge.zip',
 '../gba-host/snes-alt/Zombies_Ate_My_Neighbors_-_The_Sequel.zip',
-'../gba-host/snes-alt/Zool_-_Ninja_of_the_Nth_Dimension.zip'
+'../gba-host/snes-alt/Zool_-_Ninja_of_the_Nth_Dimension.zip',
+'/Binaries/Super_Mario_All-Stars.zip',
 
 
 

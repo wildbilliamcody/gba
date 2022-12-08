@@ -705,6 +705,8 @@ const gameNameTypeID =
 '../gba-host/nes-alt/100_Man_$_Kid_-_Maboroshi_no_Teiou_Hen_(Japan).nes.zip',
 '../gba-host/nes-alt/110-in-1.nes.zip',
 '../gba-host/nes-alt/720.nes.zip',
+'/Binaries/Mega_Man_2.nes.zip',
+'/Binaries/Contra.nes.zip',
 
 
 

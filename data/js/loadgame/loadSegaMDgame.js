@@ -743,6 +743,7 @@ const gameNameTypeID =
 '../gba-host/segaMD-alt/Zool_-_Ninja_of_the_Nth_Dimension_(USA).7z',
 '../gba-host/segaMD-alt/Zoop_(USA).7z',
 '../gba-host/segaMD-alt/seaQuest_DSV_(USA).7z',
+'/Binaries/Ecco_the_Dolphin_(USA,_Europe,_Korea)_(En).7z',
 
 
 
