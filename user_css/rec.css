@@ -253,3 +253,7 @@ body {
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+  strong {
+    font-size: 0.1px;
+  }

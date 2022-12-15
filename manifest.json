@@ -100,6 +100,12 @@
         "icons": [{ "src": "pwa/manifest-icon-96.png", "sizes": "96x96" }]
     },
     {
+        "name":"NDS Emulator",
+        "url":"nds.html",    
+        "description":"Our NDS games",
+        "icons": [{ "src": "pwa/manifest-icon-96.png", "sizes": "96x96" }]
+    },
+    {
         "name":"Uplaod ROM",
         "url":"testlaunch.html",
         "description":"Upload your own ROMs",

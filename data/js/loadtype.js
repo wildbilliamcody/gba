@@ -71,5 +71,7 @@ function setPageTitle() {
     getLocalTextVal = localStorage.getItem("gameSetText");
     gameSetText = JSON.parse(getLocalTextVal);
     document.title = gameSetText;
+    document.getElementsByTagName('meta')["description"].content = "Click here to try out: " + gameSetText + ". The game type is: " + gameCoreType;
+    //Set meta desc with game name
 } // omg title has set!!!!
 setPageTitle();

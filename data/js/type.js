@@ -10,6 +10,12 @@ function setNameTxt(clickedElement) {
     localStorage.setItem("gameSetText", JSON.stringify(gameSetText));
 }
 
+function setRecTxt(clickedElement) {
+    clickedElement.querySelectorAll("*:not(li, h1, strong)").forEach(function(v){v.remove()});
+    console.log(clickedElement.innerText);
+    localStorage.setItem("gameSetText", JSON.stringify(clickedElement.innerText));
+}
+
 function loadParams() {
     const params = new Proxy(new URLSearchParams(window.location.search), {
         get: (searchParams, prop) => searchParams.get(prop),
