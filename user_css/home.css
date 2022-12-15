@@ -171,6 +171,12 @@ a {
     justify-content: left;
 
 }
+.nds-emu-tile {
+    width: 600px;
+    height: 70px;
+    background: #bc3baf;
+    border: 3px solid #000000;
+}
 
 .align-prop-1 {
     display: flex;

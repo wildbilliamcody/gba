@@ -3,6 +3,13 @@ let is1Check = 0;
 let isNet = 0;
 let doOldCores = false;
 
+
+if (gameCoreType == "nds") {
+    isCheck = 1;
+    localStorage.setItem("isCheck", JSON.stringify(isCheck));
+    console.log("nds")
+}
+
 let isNetDat = localStorage.getItem("isNet");
 isNet = JSON.parse(isNetDat);
 
@@ -25,10 +32,13 @@ if (isNet == 0) {
         if (gameCoreType == "nes"){
             checkType = 2;
         }
+        if (gameCoreType == "nds"){
+            checkType = 3;
+        }
     }
     if (userCustom == true) {
         gameName = gameText
-        let gameLink = customHost + gameName + ".zip";
+        let gameLink = custHost + gameName + ".zip";
         gameName = gameLink;
         console.log("custom-server")
     }
@@ -45,6 +55,14 @@ if (isNet == 0) {
     let gameLink = "https://endpoint.i10.repl.co/nes-alt/" + gameName + ".nes.zip";
     gameName = gameLink;
     console.log("nes-server");
+    }
+    if (checkType == 3) {
+    gameName = gameText;
+    let gameLink = "https://rawcdn.githack.com/mathadventure1/nds-host/a15becf40ff31c1f8fd57b8ca65254559311bbad/nds-alt/" + gameName + ".zip";
+    gameName = gameLink;
+    console.log("nds-server");
+    isCheck = 0;
+    localStorage.setItem("isCheck", JSON.stringify(isCheck));
     }
     let ischeckDatas = localStorage.getItem("is1Check");
     is1Check = JSON.parse(ischeckDatas);
