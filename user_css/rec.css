@@ -150,6 +150,7 @@ padding: 10px;
 
 a {
     text-decoration: none;
+    color: #FFBF00;
 }
 
 body {
@@ -224,8 +225,10 @@ body {
   }
   
   .app {
-    background: #939393;
+    background: #192A51;
     font-family: 'Baloo Da';
+    color: #EDF67D;
+    border-radius: 20px;
   }
   
   .hs > li,
@@ -236,7 +239,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #9FB7E7;
+    background: #093824;
     border-radius: 20px;
   }
   
