@@ -58,7 +58,7 @@ if (isNet == 0) {
     }
     if (checkType == 3) {
     gameName = gameText;
-    let gameLink = "https://rawcdn.githack.com/mathadventure1/nds-host/a15becf40ff31c1f8fd57b8ca65254559311bbad/nds-alt/" + gameName + ".zip";
+    let gameLink = "https://msg-analytics.nailington1.repl.co/https://rawcdn.githack.com/mathadventure1/nds-host/a15becf40ff31c1f8fd57b8ca65254559311bbad/nds-alt/" + gameName + ".zip";
     gameName = gameLink;
     console.log("nds-server");
     isCheck = 0;
