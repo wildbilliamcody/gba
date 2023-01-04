@@ -12,13 +12,14 @@ let biosName = "null";
 // 7001 - 9000 = DS
 // 9001 - 10000 = PS1
 // 10001 - 11000 = Sega MD
+// 11001 - 12000 = Gameboy Color
 
 savedGameTypeID = localStorage.getItem("gameTypeID");
 gameTypeID = JSON.parse(savedGameTypeID);
 
 function findGameType() {
     if (gameTypeID > 0 && gameTypeID < 1001) {
-        gameCoreType = 'gba';
+        gameCoreType = 'gba'; //gba
         setGbaGameName();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
@@ -38,7 +39,7 @@ function findGameType() {
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
     if (gameTypeID > 4500 && gameTypeID < 6001) {
-        gameCoreType = 'gb';
+        gameCoreType = 'gba'; //gameboy
         setGbGameName();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
@@ -60,6 +61,11 @@ function findGameType() {
     if (gameTypeID > 10000 && gameTypeID < 11001) {
         gameCoreType = 'segaMD';
         setSegaMDGameName();
+        localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
+    }
+    if (gameTypeID > 11000 && gameTypeID < 12001) {
+        gameCoreType = 'gba'; //gbc
+        setGbGameName();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
 
