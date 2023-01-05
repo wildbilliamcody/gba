@@ -6,6 +6,7 @@ gameTypeID = JSON.parse(savedGameTypeID);
 function setN64GameName() {
 const gameNameTypeID = 
 ['data/roms/Mario_Kart_64_USA.7z',
+'Binaries/portal.z64',
 
 
 

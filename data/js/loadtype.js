@@ -9,16 +9,17 @@ let biosName = "null";
 // 3501 - 4500 = N64
 // 4501 - 6000 = Gameboy
 // 6001 - 7000 = Atari 5200
-// 7001 - 8000 = DS
-// 8001 - 9000 = PS1
-// 9001 - 10000 = Sega MD
+// 7001 - 9000 = DS
+// 9001 - 10000 = PS1
+// 10001 - 11000 = Sega MD
+// 11001 - 12000 = Gameboy Color
 
 savedGameTypeID = localStorage.getItem("gameTypeID");
 gameTypeID = JSON.parse(savedGameTypeID);
 
 function findGameType() {
     if (gameTypeID > 0 && gameTypeID < 1001) {
-        gameCoreType = 'gba';
+        gameCoreType = 'gba'; //gba
         setGbaGameName();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
@@ -38,7 +39,7 @@ function findGameType() {
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
     if (gameTypeID > 4500 && gameTypeID < 6001) {
-        gameCoreType = 'gb';
+        gameCoreType = 'gb'; //gameboy
         setGbGameName();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
@@ -62,6 +63,11 @@ function findGameType() {
         setSegaMDGameName();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
+    if (gameTypeID > 11000 && gameTypeID < 12001) {
+        gameCoreType = 'gba'; //gbc
+        setGbGameName();
+        localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
+    }
 
 }
 findGameType();
@@ -71,5 +77,7 @@ function setPageTitle() {
     getLocalTextVal = localStorage.getItem("gameSetText");
     gameSetText = JSON.parse(getLocalTextVal);
     document.title = gameSetText;
+    document.getElementsByTagName('meta')["description"].content = "Click here to try out: " + gameSetText + ". The game type is: " + gameCoreType;
+    //Set meta desc with game name
 } // omg title has set!!!!
 setPageTitle();

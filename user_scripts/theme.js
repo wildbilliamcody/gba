@@ -151,3 +151,25 @@ function getCustInput() {
   }
   localStorage.setItem("isCheck", JSON.stringify(isCheck));
 }
+
+function netPlay() {
+  let isNetdata = localStorage.getItem("isNet");
+  let isNet = JSON.parse(isNetdata);
+ 
+  if (isNet == 0) {
+      isNet = 1;
+  } else {
+  isNet = 0;
+  }
+  localStorage.setItem("isNet", JSON.stringify(isNet));
+  console.log(isNet);
+}
+
+function buttonLoad2() {
+  let isNetdata = localStorage.getItem("isNet");
+  isNet = JSON.parse(isNetdata);
+  if (isNet == 1) {
+  document.getElementById("swapNet").checked = true;
+  }
+}
+buttonLoad2();

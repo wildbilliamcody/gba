@@ -55,28 +55,29 @@ html {
   background-color: var(--bg-color);
 }
 .svg-settings {
-    height: 30px;
-    width: 30px;
+    height: 2vw;
+    width: 2vw;
     float: left;
 }
 .svg-info {
-    height: 30px;
-    width: 30px;
+    height: 2vw;
+    width: 2vw;
     float: right;
 }
 
 .svg-disc {
-    height: 60px;
-    width: 60px;
+    height: 2vw;
+    width: 2vw;
     float: right;
 }
+
 
 .setting-nav {
     display: flex;
     font-family: 'Baloo Da';
 font-style: normal;
 font-weight: 400;
-font-size: 32px;
+font-size: 2vw;
 line-height: 15px;
 /* identical to box height */
 
@@ -92,7 +93,7 @@ padding: 10px;
     font-family: 'Baloo Da';
 font-style: normal;
 font-weight: 400;
-font-size: 32px;
+font-size: 2vw;
 line-height: 15px;
 /* identical to box height */
 
@@ -109,7 +110,7 @@ padding: 10px;
     font-family: 'Baloo Da';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: 2vw;
 line-height: 15px;
 margin-left: 55px;
 /* identical to box height */
@@ -125,8 +126,8 @@ padding: 10px;
     box-sizing: border-box;
     
     top: 3%;
-    height: 75px;
-    width: 874px;
+    height: 4vw;
+    width: 50vw;
 
     background: var(--secondary-color);
     border: 3px solid #000000;
@@ -150,17 +151,18 @@ padding: 10px;
 a {
     text-decoration: none;
     color: var(--bg-color);
+    font-size: 2.53vw;
 }
 
 .sidebar-1 {
-    width: 246px;
-    height: 100%;
+    width: 17vw;
+    height: 47vw;
     background: var(--primary-color);
 }
 
 .sidebar-2 {
-    width: 246px;
-    height: 100%;
+    width: 17vw;
+    height: 47vw;
     background: var(--primary-color);
 }
 
@@ -169,6 +171,12 @@ a {
     float: left;
     justify-content: left;
 
+}
+.nds-emu-tile {
+    width: 39vw;
+    height: 5vw;
+    background: #bc3baf;
+    border: 3px solid #000000;
 }
 
 .align-prop-1 {
@@ -189,7 +197,7 @@ a {
     font-family: 'Baloo Da';
 font-style: normal;
 font-weight: 400;
-font-size: 48px;
+font-size: 3.5vw;
 /* identical to box height */
 
 text-align: center;
@@ -202,7 +210,7 @@ color: var(--bg-color);
     font-family: 'Baloo Da';
 font-style: normal;
 font-weight: 400;
-font-size: 36px;
+font-size: 2.3vw;
 /* identical to box height */
 
 text-align: center;
@@ -212,8 +220,8 @@ color: var(--bg-color);
 }
 
 .github-logo {
-    height: 60px;
-    width: 60px;
+    height: 3.5vw;
+    width: 3.5vw;
     color: black;
     filter: drop-shadow(8px 10px 4px rgba(1, 77, 9, 0.25));
 }
@@ -222,7 +230,7 @@ color: var(--bg-color);
     font-family: 'Baloo Da';
 font-style: normal;
 font-weight: 400;
-font-size: 36px;
+font-size: 2.3vw;
 padding: 2px;
 /* identical to box height */
 
@@ -237,39 +245,44 @@ color: var(--bg-color);
 }
 
 .gba-emu-tile {
-    width: 600px;
-    height: 70px;
+    width: 39vw;
+    height: 5vw;
     background: #6BA263;
     border: 3px solid #000000;
 }
 
 
 .gba-tile-wrap {
+    display: table;
+  margin: 0 auto;
 }
 
 
 .nes-emu-tile {
-    width: 600px;
-    height: 70px;
+    width: 39vw;
+    height: 5vw;
     background: #B54C4C;
+    border: 3px solid #000000;
+}
+
+.snes-emu-tile {
+    width: 39vw;
+    height: 5vw;
+    background: #e0882a;
     border: 3px solid #000000;
 }
 
 
 .wrapper-tile-1 {
-    float: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 27%;
-    margin-bottom: 1%;
+	width:100%;
+	margin-bottom: 1%;
 }
 
 .tile-text {
     font-family: 'Arial';
 font-style: normal;
 font-weight: 700;
-font-size: 32px;
+font-size: 2vw;
 text-align: center;
 color: #000000;
 text-decoration: underline;
@@ -286,8 +299,8 @@ text-decoration: underline;
 }
 
 .gba-emu-tile-1 {
-    width: 600px;
-    height: 70px;
+    width: 39vw;
+    height: 5vw;
     background: #6BA263;
     border: 3px solid #000000;
     filter: drop-shadow(8px 10px 4px rgba(1, 77, 9, 0.25));
@@ -299,8 +312,8 @@ text-decoration: underline;
 
 
 .nes-emu-tile {
-    width: 600px;
-    height: 70px;
+    width: 39vw;
+    height: 5vw;
     background: #B54C4C;
     border: 3px solid #000000;
     filter: drop-shadow(8px 10px 4px rgba(126, 13, 13, 0.25));
@@ -308,16 +321,16 @@ text-decoration: underline;
 }
 
 .sega-emu-tile-1 {
-    width: 600px;
-    height: 70px;
+    width: 39vw;
+    height: 5vw;
     background: #6480AB;
     border: 3px solid #000000;
     filter: drop-shadow(8px 10px 4px rgba(14, 35, 107, 0.25));
 }
 
 .more-emu-tile {
-    width: 600px;
-    height: 70px;
+    width: 39vw;
+    height: 5vw;
     background: #BACF64;
     border: 3px solid #000000;  
     filter: drop-shadow(8px 10px 4px rgba(136, 138, 22, 0.25));
@@ -325,18 +338,14 @@ text-decoration: underline;
 
 
 .wrapper-tile {
-    float: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 27%;
+	width:100%;
 }
 
 .tile-text-1 {
     font-family: 'Arial';
 font-style: normal;
 font-weight: 700;
-font-size: 32px;
+font-size: 2vw;
 text-align: center;
 color: #000000;
 text-decoration: underline;
@@ -350,141 +359,25 @@ text-decoration: underline;
     text-align: center;
 }
 
-@media only screen and (max-width: 1200px) {
-    .center-please {
-        margin: auto;
-        width: 50%;
-        padding-left: 100px;
-    }
-    body {
-        color: red;
-    }
-    .center-main.side-title {
-        font-family: 'Baloo Da';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    /* identical to box height */
-    
-    text-align: center;
-    text-decoration-line: underline;
-    text-transform: uppercase;
-    color: var(--bg-color)
-    }
-    .setting-nav {
-        display: flex;
-        font-family: 'Baloo Da';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 15px;
-    /* identical to box height */
-    
-    float: left;
-    text-align: center;
-    
-    color: #FFFFFF;
-    padding: 10px;
-    }
-    
-    .info-nav {
-        display: flex;
-        font-family: 'Baloo Da';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 15px;
-    /* identical to box height */
-    
-    float: left;
-    text-align: center;
-    
-    color: #FFFFFF;
-    float: right;
-    padding: 10px;
-    }
-    .gba-emu-tile-1 {
-        width: 350px;
-        height: 40px;
-        background: #6BA263;
-        border: 3px solid #000000;
-        filter: drop-shadow(8px 10px 4px rgba(1, 77, 9, 0.25));
-    }
-    
-    
-    .nes-emu-tile {
-        width: 350px;
-        height: 40px;
-        background: #B54C4C;
-        border: 3px solid #000000;
-        filter: drop-shadow(8px 10px 4px rgba(126, 13, 13, 0.25));
-    
-    }
-    
-    .sega-emu-tile-1 {
-        width: 350px;
-        height: 40px;
-        background: #6480AB;
-        border: 3px solid #000000;
-        filter: drop-shadow(8px 10px 4px rgba(14, 35, 107, 0.25));
-    }
-    
-    .more-emu-tile {
-        width: 350px;
-        height: 40px;
-        background: #BACF64;
-        border: 3px solid #000000; 
-        filter: drop-shadow(8px 10px 4px rgba(136, 138, 22, 0.25)); 
-    }
 
-    .gba-emu-tile {
-        width: 350px;
-        height: 40px;
-        background: #6BA263;
-        border: 3px solid #000000;
-        filter: drop-shadow(8px 10px 4px rgba(1, 77, 9, 0.25));
-    }
-    
-    
-    .nes-emu-tile {
-        width: 350px;
-        height: 40px;
-        background: #B54C4C;
-        border: 3px solid #000000;
-        filter: drop-shadow(8px 10px 4px rgba(126, 13, 13, 0.25));
-    }
 
-    .tile-text-1 {
-        font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    color: #000000;
-    text-decoration: underline;
-    }
-    .tile-text {
-        font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    color: #000000;
-    text-decoration: underline;
-    }
-    .wrapper-tile {
-        float: center;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 8%;
-    }
-    .wrapper-tile-1 {
-        float: center;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 8%;
-        margin-bottom: 3%;
-    }
-  }
+
+.register-real {
+    width: 200px;
+    height: 50px;
+    background: var(--secondary-color);
+    border: 3px solid #000000;
+    font-family: 'Baloo Da';
+    cursor: pointer;
+    color: var(--heading-color);
+}
+
+.register-real:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    /* good enough */
+}
+
+.register-button {
+    padding-right: 75px;
+}

@@ -1,7 +1,8 @@
 # How to Make your Own Fork
 1. Click Fork!
 2. Once created head to: Settings --> Pages --> Set Up GitHub Pages
-3. All GBA Games work with no configuration! Enjoy
+3. Make sure you have forked our second repo (DO NOT RENAME IT)
+4. Deploy that, and now all games will work out of box, enjoy! (If you are hosting on external server, make sure that the gba-host games are located at yourdomain.com/gba-host)
 
 Pretty much all games, including GBA soon, are hosted on an external server. ~There may be a second Repo created to keep the smaller roms in case you want to copy them in yourself.~ Please note that if you do add in roms to your fork, deploy times for GitHub Pages on any changes you may have made will get larger. Currently sits at ~25 mins.
 
@@ -13,7 +14,18 @@ Any of our games that we host on our server are allowed to be referenced! Please
 
 # GBA Games
 GBA Emulator hosted on my account.
-More games added by me, and other design changes by me.
-Also more games by Nailington
+More games added by the MSG team, and other design changes by the MSG team./
 
-[Ultimate Guide to Contributing to the New Emulator!](emulatorjs/docs/UltimateGuide.md)
+
+Github profiles:
+
+[Cattn](https://github.com/cattn)
+
+[Nailington](https://github.com/nailington)
+
+[JavaScythe](https://github.com/javascythe)
+
+[EmulatorJS](https://github.com/EmulatorJS/EmulatorJS)
+
+
+### [Ultimate Guide to Contributing to the New Emulator!](emulatorjs/docs/UltimateGuide.md)
