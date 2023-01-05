@@ -82,6 +82,18 @@
         "icons": [{ "src": "pwa/manifest-icon-96.png", "sizes": "96x96" }]
     },
     {
+        "name":"GB Emulator",
+        "url":"gb.html",
+        "description":"Our GB games",
+        "icons": [{ "src": "pwa/manifest-icon-96.png", "sizes": "96x96" }]
+    },
+    {
+        "name":"GBC Emulator",
+        "url":"gbc.html",
+        "description":"Our GBC games",
+        "icons": [{ "src": "pwa/manifest-icon-96.png", "sizes": "96x96" }]
+    },
+    {
         "name":"NES Emulator",
         "url":"nes.html",
         "description":"Our NES games",
