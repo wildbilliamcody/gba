@@ -6,7 +6,7 @@
 
 Pretty much all games, including GBA soon, are hosted on an external server. ~There may be a second Repo created to keep the smaller roms in case you want to copy them in yourself.~ Please note that if you do add in roms to your fork, deploy times for GitHub Pages on any changes you may have made will get larger. Currently sits at ~25 mins.
 
-There is now a second repo with our Roms hosted on it! See [Here!](https://github.com/cattn/gba-host)
+There is now a second repo with our Roms hosted on it! See [Here!](https://github.com/math-study/gba-host)
 
 Any of our games that we host on our server are allowed to be referenced! Please do not abuse this or risk loosing access. Please [reach out](https://discord.gg/nZrabh4cgH) if you would like a local copy of the roms hosted. We will review each request individually.
 
@@ -24,6 +24,8 @@ Github profiles:
 [Nailington](https://github.com/nailington)
 
 [JavaScythe](https://github.com/javascythe)
+
+[Math Study (Org)](https://github.com/math-study)
 
 [EmulatorJS](https://github.com/EmulatorJS/EmulatorJS)
 
