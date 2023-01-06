@@ -270,7 +270,6 @@ padding: 10px;
   
   .hs > .app li  ,
   .item {
-    scroll-snap-align: center;
     padding: calc(var(--gutter) / 4 * 8);
     display: flex;
     flex-direction: column;
