@@ -251,6 +251,26 @@ color: var(--bg-color);
     border: 3px solid #000000;
 }
 
+.gba-emu-tile-1:hover {
+    transform: scale(1.1);
+  }
+
+
+  .nes-emu-tile:hover {
+    transform: scale(1.1);
+  }
+  .nds-emu-tile:hover {
+    transform: scale(1.1);
+  }
+  .snes-emu-tile:hover {
+    transform: scale(1.1);
+  }
+  .sega-emu-tile-1:hover {
+    transform: scale(1.1);
+  }
+  .more-emu-tile:hover {
+    transform: scale(1.1);
+  }
 
 .gba-tile-wrap {
     display: table;

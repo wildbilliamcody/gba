@@ -1172,8 +1172,12 @@ div.omrs-input-group {
   background: var(--secondary-color);
   border-radius: 100px;
   justify-content: center;
-  margin-bottom: 7px;
+  margin: 10px 0;
+}
 
+.gba-filter-hide:hover {
+  transform: scale(1.01);
+  background-color: darken(var(--secondary-color), 100%);
 }
 
 .bar-text {
