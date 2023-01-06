@@ -23,6 +23,7 @@
         <meta name = viewport content = "width = device-width, initial-scale = 1">
 
         <link rel="stylesheet" href="user_css/index.css">
+        <link rel="stylesheet" href="user_css/rec.css">
     </head>
     <nav> 
       <div class="nav-wrap">
@@ -56,7 +57,7 @@
 
     </nav>
     <body>
-        <h2>Welcome to the NEW EMULATOR!</h2>
+        <h2>Welcome to the SNES EMULATOR!</h2>
         <ul class="menu">
           <li><a href="index.html" data-bubble="Return!">Home</a></li>
           <li><a href="testlaunch.html" data-bubble="Upload!">Bring a Rom!</a></li>
@@ -69,13 +70,30 @@
 
           <ul id="searchGames">
             <p class="warning"></p>
-            
-        <h1>SNES</h1>
           <button type="button" style="border-radius: 20px; color: #ffffff; background-color: #3e1687;" class="collapsible-theme">Saved Games (Click to hide)</button>
           <div>
             <div id="favorite-bar-text"></div>
             <a href="index_beta.html" class="bar-text">Manage Saves</a>
             <p> Tip! favorite a game by opening a game, and clicking the favorite button. </p>
+          </div>
+          <div class="app">
+            <h1>Newest Arrivals</h1>
+            <ul class="hs full">
+              <a href="launchpad.html" onclick="gameType(7754); setRecTxt(this);"><li class="item"><h1>LEGO_Batman<strong>_-_The_Videogame_(USA)_(EnFrEs)</strong></h1>
+                <p>Tags: #Open #Lego #Nintendo</p>
+              </li></a>
+            <a href="launchpad.html" onclick="gameType(7858); setRecTxt(this);"><li class="item"><h1>Mario_Party_DS<strong>_(USA)</strong></h1>
+                <p>Tags: #Open #Multiplayer #Nintendo</p></li></a>
+            <a href="launchpad.html" onclick="gameType(8064); setRecTxt(this);"><li class="item"><h1>New_Super_Mario_Bros<strong>._(USA)</strong></h1>
+                <p>Tags: #Open #Platformer #Nintendo</p></li></a>
+            <a href="launchpad.html" onclick="gameType(8376); setRecTxt(this);"><li class="item"><h1>Tony_Hawks_Downhill_Jam<strong>_(USA)</strong></h1>
+                <p>Tags: #Action #Adventure #Sports</p></li></a>
+            <a href="launchpad.html" onclick="gameType(8629); setRecTxt(this);"><li class="item"><h1>Yoshis_Island_DS<strong>_(USA)</strong></h1>
+                <p>Tags: #Open #Platformer #Nintendo</p></li></a>
+            <a href="launchpad.html" onclick="gameType(7260); setRecTxt(this);"><li class="item"><h1>Call_of_Duty_-_Black_Ops<strong>_(USA)</strong></h1>
+                <p>Tags: #Action #Adventure #FPS</p></li></a>
+            </ul>
+            
           </div>
           <br>
           <br>
