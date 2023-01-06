@@ -3,14 +3,14 @@
     <head>
       <script async src="https://arc.io/widget.min.js#C5tJKq6m"></script>
         <title>GBA Games</title>
-         <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-62N8610D2L"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'G-62N8610D2L');
+  
+  gtag('config', 'G-62N8610D2L')
 </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
@@ -22,6 +22,7 @@
         <meta name = viewport content = "width = device-width, initial-scale = 1">
 
         <link rel="stylesheet" href="user_css/index.css">
+        <link rel="stylesheet" href="user_css/rec.css">
     </head>
     
     <nav> 
@@ -58,14 +59,11 @@
    
 
     <body>
-        <h2>Retro Emulator!</h2>
+        <h2>GBA Emulator!</h2>
         <ul class="menu">
           <li><a href="testlaunch.html" data-bubble="Real!">Upload ROM</a></li>
         </ul>
         <main>
-          <p> Update: Dragonball games FIXED! </p>
-          <p>You can do so <a href="settings.html">here</a>. If you want to host your own version easily (and free), then view our guide <a href="info.html">here</a>.</p>
-          <p> <a target="_blank" href="https://latebat.me/">Checkout</a> my friend's site, he helped out with some stuff on here behind the scenes! <img style="width: 20px; height: 20px;" src="https://latebat.me/assets/img/hamster.gif"></p>
           <ul id="searchGames">
             <style>
               #showN {
@@ -120,12 +118,11 @@
               </div>
             </div>
             <p class="warning"></p>
-          <h1>GBA Roms</h1>
-          <a href="gba-2.html" class="bar-text">Continued on Page 2</a>
-          <div class="search-box">
+              <div class="search-box">
             <button aria-labelledby="search1" class="btn-search"><i class="fas fa-search"></i></button>
             <input class="input-search" type="text" id="search1" onkeyup="searchBar()" placeholder="Search for games..">
           </div>
+          <a href="gba-2.html" class="bar-text">Continued on Page 2</a>
           <br>
           <button type="button" style="border-radius: 20px; color: #ffffff; background-color: #3e1687; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;" class="collapsible-theme">Saved Games (Click to hide)</button>
           <div class="fav-border-style">
@@ -133,13 +130,25 @@
             <a href="index_beta.html" class="bar-text">Manage Saves</a>
             <p> Tip! favorite a game by opening a game, and clicking the favorite button. </p>
           </div>
-          <h1><em>Newest Roms!</em></h1>
-          <li><a href="launchpad.html" onclick="gameType(362); setNameTxt(this);"><b><em>Pokemon_Emerald_Rogue_EX_(v1.2.1)</a></li>
-          <li><a href="launchpad.html" onclick="gameType(363); setNameTxt(this);">Pokemon-Radical-Red-v3.1</a></li>
-          <li><a href="launchpad.html" onclick="gameType(364); setNameTxt(this);">Fusion-3-Red-Blue</a></li>
-          <li><a href="launchpad.html" onclick="gameType(365); setNameTxt(this);">Pokemon-Sors-Patched</a></li>
-          <li><a href="launchpad.html" onclick="gameType(366); setNameTxt(this);">unbound-v2.0.3.2</em></b></a></li>
-          <br>
+          <div class="app">
+            <h1>Newest Arrivals</h1>
+            <ul class="hs full">
+              <a href="launchpad.html" onclick="gameType(7754); setRecTxt(this);"><li class="item"><h1>LEGO_Batman<strong>_-_The_Videogame_(USA)_(EnFrEs)</strong></h1>
+                <p>Tags: #Open #Lego #Nintendo</p>
+              </li></a>
+            <a href="launchpad.html" onclick="gameType(7858); setRecTxt(this);"><li class="item"><h1>Mario_Party_DS<strong>_(USA)</strong></h1>
+                <p>Tags: #Open #Multiplayer #Nintendo</p></li></a>
+            <a href="launchpad.html" onclick="gameType(8064); setRecTxt(this);"><li class="item"><h1>New_Super_Mario_Bros<strong>._(USA)</strong></h1>
+                <p>Tags: #Open #Platformer #Nintendo</p></li></a>
+            <a href="launchpad.html" onclick="gameType(8376); setRecTxt(this);"><li class="item"><h1>Tony_Hawks_Downhill_Jam<strong>_(USA)</strong></h1>
+                <p>Tags: #Action #Adventure #Sports</p></li></a>
+            <a href="launchpad.html" onclick="gameType(8629); setRecTxt(this);"><li class="item"><h1>Yoshis_Island_DS<strong>_(USA)</strong></h1>
+                <p>Tags: #Open #Platformer #Nintendo</p></li></a>
+            <a href="launchpad.html" onclick="gameType(7260); setRecTxt(this);"><li class="item"><h1>Call_of_Duty_-_Black_Ops<strong>_(USA)</strong></h1>
+                <p>Tags: #Action #Adventure #FPS</p></li></a>
+            </ul>
+            
+          </div>
 
           <li class="gba-filter-hide"><a class="bar-text" href="launchpad.html" onclick="gameType(1); setNameTxt(this);">pokemonsapphire</a></li>
           <li class="gba-filter-hide"><a class="bar-text" href="launchpad.html" onclick="gameType(2); setNameTxt(this);">0994</a></li>
