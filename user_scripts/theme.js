@@ -167,6 +167,23 @@ function netPlay() {
   console.log(isNet);
 }
 
+let doGitHack = 0;
+let gitHackDat = localStorage.getItem("doGitHack");
+doGitHack = JSON.parse(gitHackDat);
+
+function gitHack() {
+  console.log("real")
+  doGitHack = localStorage.getItem("doGitHack");
+  if (doGitHack == 1) {
+    doGitHack = 0;
+    console.log("swapped1");
+  } else {
+    doGitHack = 1;
+    console.log("Swapped");
+  }
+  localStorage.setItem("doGitHack", JSON.stringify(doGitHack));
+}
+
 function buttonLoad2() {
   let isNetdata = localStorage.getItem("isNet");
   isNet = JSON.parse(isNetdata);
@@ -175,3 +192,12 @@ function buttonLoad2() {
   }
 }
 buttonLoad2();
+
+function buttonLoad3() {
+  let isDoGitHackData = localStorage.getItem("doGitHack");
+  doGitHack = JSON.parse(isDoGitHackData);
+  if (doGitHack == 1) {
+  document.getElementById("swapHack").checked = true;
+  }
+}
+buttonLoad3();

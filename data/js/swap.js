@@ -2,12 +2,23 @@ let isCheck = 0;
 let is1Check = 0;
 let isNet = 0;
 let doOldCores = false;
+let doGitHack = 0;
 
+
+let doGitHackDat = localStorage.getItem("doGitHack");
+doGitHack = JSON.parse(doGitHackDat);
 
 if (gameCoreType == "nds") {
-    isCheck = 1;
-    localStorage.setItem("isCheck", JSON.stringify(isCheck));
-    console.log("nds")
+    if (doGitHack == 1) {
+        isCheck = 2;
+        localStorage.setItem("isCheck", JSON.stringify(isCheck));
+        console.log("nds1")
+    } else {
+        isCheck = 1;
+        localStorage.setItem("isCheck", JSON.stringify(isCheck));
+        console.log("nds")
+    }
+    
 }
 
 let isNetDat = localStorage.getItem("isNet");
@@ -35,6 +46,9 @@ if (isNet == 0) {
         if (gameCoreType == "nds"){
             checkType = 3;
         }
+    }
+    if (isCheck == 2) {
+        checkType = 4;
     }
     if (userCustom == true) {
         gameName = gameText
@@ -64,6 +78,13 @@ if (isNet == 0) {
     isCheck = 0;
     localStorage.setItem("isCheck", JSON.stringify(isCheck));
     }
+    if (checkType == 4) {
+        gameName = gameText;
+        let gameLink = "https://rawcdn.githack.com/mathadventure1/nds-host/a15becf40ff31c1f8fd57b8ca65254559311bbad/nds-alt/" + gameName + ".zip";
+        gameName = gameLink;
+        console.log("nds-server-2");
+        isCheck = 0;
+        }
     let ischeckDatas = localStorage.getItem("is1Check");
     is1Check = JSON.parse(ischeckDatas);
    
