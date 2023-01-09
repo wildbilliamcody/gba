@@ -83,7 +83,7 @@ const OFFLINE_URL = "offline.html";
 const OFFLINE_CSS1 = "user_css/index.css";
 const OFFLINE_CSS2 = "user_css/main.css";
 const OFFLINE_CSS3 = "user_css/themes.css";
-const OFFLINE_JS = "user_scripts/themes.js";
+const OFFLINE_JS = "user_scripts/theme.js";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
