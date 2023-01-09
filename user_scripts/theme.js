@@ -62,18 +62,20 @@ function searchBar() {
     // Loop through all list items, and hide those who don't match the search query
     const searchRegex = new RegExp(filter, 'i');
 
-const liArray = Array.from(li);
-liArray.forEach((item) => {
-  const a = item.getElementsByTagName("a")[0];
-  const txtValue = a.textContent || a.innerText;
-  if (searchRegex.test(txtValue)) {
-    item.style.display = "";
-    ul.style.display = "block";
-    warning.innerHTML = '';
-  } else {
-    item.style.display = "none";
-  }
-});
+    const liArray = Array.from(li);
+    liArray.forEach((item) => {
+      const a = item.getElementsByTagName("a")[0];
+      if (a) {
+        const txtValue = a.textContent || a.innerText;
+        if (searchRegex.test(txtValue)) {
+          item.style.display = "";
+          ul.style.display = "block";
+          warning.innerHTML = '';
+        } else {
+          item.style.display = "none";
+        }
+      }
+    });
     
     }
 
