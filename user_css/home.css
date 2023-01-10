@@ -271,12 +271,23 @@ color: var(--bg-color);
   .more-emu-tile:hover {
     transform: scale(1.1);
   }
+  .rec-emu-tile:hover {
+    transform: scale(1.22);
+  }
 
 .gba-tile-wrap {
     display: table;
   margin: 0 auto;
 }
 
+.rec-emu-tile {
+    width: 39vw;
+    height: 5vw;
+    background: #48b9bb;
+    border: 3px solid #000000;
+    margin-bottom: 1vw;
+    transform: scale(1.18);
+}
 
 .nes-emu-tile {
     width: 39vw;
