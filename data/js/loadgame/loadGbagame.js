@@ -372,7 +372,8 @@ const gameNameTypeID =
 '../gba-host/gba-alt/Pokemon-Sors-Patched.gba',
 '../gba-host/gba-alt/unbound-v2.0.3.2.gba',
 '/Binaries/advancewars.gba',
-
+'../gba-host/gba-alt/Mother_3_(Japan).gba',
+'../gba-host/gba-alt/Mother_3_(Translated).gba',
 
 
 
