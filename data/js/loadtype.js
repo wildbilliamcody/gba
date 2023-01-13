@@ -39,7 +39,7 @@ function findGameType() {
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
     if (gameTypeID > 4500 && gameTypeID < 6001) {
-        gameCoreType = 'gb'; //gameboy
+        gameCoreType = 'gba'; //gameboy
         setGbGameName();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
@@ -65,7 +65,7 @@ function findGameType() {
     }
     if (gameTypeID > 11000 && gameTypeID < 12001) {
         gameCoreType = 'gba'; //gbc
-        setGbGameName();
+        setGbcGameName();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
 

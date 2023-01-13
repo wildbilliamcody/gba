@@ -3,7 +3,7 @@ gameTypeID = JSON.parse(savedGameTypeID);
 
 
 
-function setGbGameName() {
+function setGbcGameName() {
 const gameNameTypeID = 
 ['../gba-host/gbc-alt/10-Pin_Bowling_(USA)_(Rumble_Version).7z',
 '../gba-host/gbc-alt/102_Dalmatians_-_Puppies_to_the_Rescue_(USA_Europe).7z',
