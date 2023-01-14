@@ -84,6 +84,9 @@ const OFFLINE_CSS1 = "user_css/index.css";
 const OFFLINE_CSS2 = "user_css/main.css";
 const OFFLINE_CSS3 = "user_css/themes.css";
 const OFFLINE_JS = "user_scripts/theme.js";
+const OFFLINE_404 = "404.html";
+const OFFLINE_DEV = "dev.html";
+const OFFLINE_DEVJS = "dev.js";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -97,6 +100,9 @@ self.addEventListener("install", (event) => {
       await cache.add(new Request(OFFLINE_CSS2, { cache: "reload" }));
       await cache.add(new Request(OFFLINE_CSS3, { cache: "reload" }));
       await cache.add(new Request(OFFLINE_JS, { cache: "reload" }));
+      await cache.add(new Request(OFFLINE_404, { cache: "reload" }));
+      await cache.add(new Request(OFFLINE_DEV, { cache: "reload" }));
+      await cache.add(new Request(OFFLINE_DEVJS, { cache: "reload" }));
     })()
   );
   // Force the waiting service worker to become the active service worker.
