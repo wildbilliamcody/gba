@@ -2,6 +2,11 @@
 
 html {
     background-color: #121212;
+    cursor: url("../data/assets/wii-pointer-blue.cur"), auto;
+}
+
+input {
+  cursor: url("../data/assets/wii-pointer-reverse.cur"), pointer;
 }
 
 .nav-bar {
@@ -156,6 +161,9 @@ margin-top: 2vw;
     display: none;
   }
 
+  a {
+    cursor: url("../data/assets/wii-grab.cur"), pointer;
+  }
 
 
 h1 strong {

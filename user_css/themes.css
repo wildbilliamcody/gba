@@ -170,3 +170,15 @@
     border-radius: 20px;
     color: var(--bg-color)
   }
+
+  html {
+    cursor: url("../data/assets/wii-pointer-blue.cur"), auto;
+  }
+  
+  a {
+    cursor: url("../data/assets/wii-grab.cur"), pointer;
+  }
+  
+  input {
+    cursor: url("../data/assets/wii-pointer-reverse.cur"), pointer;
+  }
