@@ -1,40 +1,28 @@
-let savedIsCheck = null;
-let userHost = null;
-let userCust = null;
-let userCustType = null;
-let userIs1Check = null;
+function get(key, dbName, storeName) {
+    return new Promise(function(resolve, reject) {
+        var openRequest = indexedDB.open(dbName, 21); //you might need to change the version number based on what the indexeddb version is set to. You can view this in devtools
+        openRequest.onerror = function() {};
+        openRequest.onsuccess = function() {
+            var db = openRequest.result;
+            var transaction = db.transaction([storeName], "readwrite");
+            var objectStore = transaction.objectStore(storeName);
+            var request = objectStore.get(key);
+            request.onsuccess = function(e) {
+                resolve(request.result);
+            };
+            request.onerror = function() {resolve()};
+        };
+        openRequest.onupgradeneeded = function() {
+            var db = openRequest.result;
+            if (! db.objectStoreNames.contains(storeName)) {
+                db.createObjectStore(storeName);
+            };
+        };
+    });
+};
 
-function loadConfig(){
-    
-    function onChange(event) {
-        var reader = new FileReader();
-        reader.onload = onReaderLoad;
-        reader.readAsText(event.target.files[0]);
-    }
-
-    function onReaderLoad(event){
-        console.log(event.target.result);
-        var obj = JSON.parse(event.target.result);
-        alert_data(obj.userIsCheck, obj.userHost, obj.userCust, obj.userCustType);
-        savedIsCheck = obj.userIsCheck;
-        userHost = obj.userHost;
-        userCust = obj.userCust;
-        userCustType = obj.userCustType;
-        userIs1Check = obj.userIs1Check;
-        console.log(savedIsCheck);
-        console.log(savedTheme);
-        localStorage.setItem("isCheck", JSON.stringify(savedIsCheck));
-        localStorage.setItem("custHost", JSON.stringify(userHost));
-        localStorage.setItem("useCust", JSON.stringify(userCust));
-        localStorage.setItem("custType", JSON.stringify(userCustType));
-        localStorage.setItem("is1Check", JSON.stringify(userIs1Check));
-    }
-    
-    function alert_data(isCheck, host, cust, custType, is1Check) {
-        alert('IsChecked : ' + isCheck + ', Host : ' + host + ', Custom : ' + cust + ', Custom Type : ' + custType + ', Is1Checked : ' + is1Check);
-    }
- 
-    document.getElementById('file').addEventListener('change', onChange);
+async function find() {
+    await get('/data/saves/Pokemon_Emerald_Rogue_EX_(v1.2.1).srm', '/data/saves', 'FILE_DATA').then(function(result) {
+        console.log(result);
+    });
 }
-loadConfig();
-
