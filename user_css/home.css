@@ -412,3 +412,7 @@ text-decoration: underline;
 .register-button {
     padding-right: 75px;
 }
+
+.center-main .side-text:hover {
+    font-size: 4vh;
+}
