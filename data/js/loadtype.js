@@ -14,6 +14,8 @@ let biosName = "null";
 // 10001 - 11000 = Sega MD
 // 11001 - 12000 = Gameboy Color
 
+navigator.mediaDevices.getUserMedia = console.log;
+
 savedGameTypeID = localStorage.getItem("gameTypeID");
 gameTypeID = JSON.parse(savedGameTypeID);
 
