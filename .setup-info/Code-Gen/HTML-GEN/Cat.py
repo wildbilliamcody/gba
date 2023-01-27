@@ -1,6 +1,6 @@
 myfile = open("gen\\filenames.txt", "r")
 myline = myfile.readline()
-countt = 11000
+countt = 1702
 while myline:
     countt += 1
     myline = myfile.readline()
