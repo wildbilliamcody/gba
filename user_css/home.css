@@ -274,10 +274,19 @@ color: var(--bg-color);
   .rec-emu-tile:hover {
     transform: scale(1.22);
   }
-
+    .link-emu-tile:hover {
+        transform: scale(1.1);
+    }
 .gba-tile-wrap {
     display: table;
   margin: 0 auto;
+}
+
+.link-emu-tile {
+    width: 39vw;
+    height: 5vw;
+    background: #4d32b0;
+    border: 3px solid #000000;
 }
 
 .rec-emu-tile {
