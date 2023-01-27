@@ -6,5 +6,6 @@ while myline:
     myline = myfile.readline()
     myline1 = myline.replace("\n", "")
     with open("gen\gen.txt", "a") as f:
-        # f.write(f"""<li class="gba-filter-hide"><a href="launchpad.html" class="bar-text" onclick="gameType({countt}); setNameTxt(this);">{myline1}</a></li>\n""")
-        f.write(f"""<a href="launchpad.html" onclick="gameType({countt}); setRecTxt(this);"><li class="item"><h1>{myline1}</h1>\n<p>Tags: #nes #new #Nintendo</p></li></a>\n""")
+         f.write(f"""<li class="gba-filter-hide"><a href="launchpad.html" class="bar-text" onclick="gameType({countt}); setNameTxt(this);">{myline1}</a></li>\n""") # Default Generation
+
+        # f.write(f"""<a href="launchpad.html" onclick="gameType({countt}); setRecTxt(this);"><li class="item"><h1>{myline1}</h1>\n<p>Tags: #nes #new #Nintendo</p></li></a>\n""") # Use this line for Reccomended/New Additions Section
