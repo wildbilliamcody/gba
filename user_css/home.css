@@ -425,3 +425,19 @@ text-decoration: underline;
 .center-main .side-text:hover {
     font-size: 4vh;
 }
+
+.ad-banner-square {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+}
+
+.text-josh {
+    font-family: 'Baloo Da';
+    font-size: 28px;
+    color: var(--heading-color);
+    display: block !important;
+    text-align: center;
+    justify-content: center;
+}
