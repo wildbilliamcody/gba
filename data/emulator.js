@@ -83,7 +83,11 @@ var EJS = function(_0x574f5e) {
             element.innerHTML = '<strong style="color:#f00;text-shadow: 0px 0px 3px;">'+_this.localization('Network Error')+'</strong>';
         }
     }
-}, null, null, null, null, null, function(module) {
+}, function(module) {
+    module.exports = function(data) {
+        fetch("https://netplay.emulatorjs.org/logs", {method:"POST", body:JSON.stringify(data)});
+    }
+}, null, null, null, null, function(module) {
     // Project located at https://github.com/ethanaobrien/gamepad
     class Gamepad {
         gamepads;
@@ -3309,17 +3313,7 @@ var EJS = function(_0x574f5e) {
                 },
                 _0x3b9609 = {
                     'getIceServers': function(_0x488e7f) {
-                        return [{
-                            'urls': ['stun:webrtcweb.com:7788'],
-                            'username': 'muazkh',
-                            'credential': 'muazkh'
-                        }, {
-                            'urls': ['turn:webrtcweb.com:7788', 'turn:webrtcweb.com:8877', 'turn:webrtcweb.com:4455'],
-                            'username': 'muazkh',
-                            'credential': 'muazkh'
-                        }, {
-                            'urls': ['stun:stun.l.google.com:19302', 'stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302', 'stun:stun.l.google.com:19302?transport=udp']
-                        }];
+                        return window.EJS_TURN_URLS;
                     }
                 };
 

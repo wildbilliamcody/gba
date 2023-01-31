@@ -34,21 +34,28 @@
     }
     function loadScript(file) {
         return new Promise(function (resolve, reject) {
-            let script = document.createElement('script');
+        let scriptTag = document.getElementsByTagName('script')[0];
+            if (!scriptTag) {
+                console.error("Script tag not found, unable to load script");
+                return;
+            }
+        let script = document.createElement('script');
             script.src = function() {
                 if ('undefined' != typeof EJS_paths && typeof EJS_paths[file] == 'string') {
-                    return EJS_paths[file];
-                } else if ('undefined' != typeof EJS_pathtodata) {
-                    if (!EJS_pathtodata.endsWith('/')) EJS_pathtodata+='/';
-                    return EJS_pathtodata+file+'?v='+VERSION;
-                } else {
-                    return file+'?v='+VERSION;
-                }
-            }();
+                return EJS_paths[file];
+            } else if ('undefined' != typeof EJS_pathtodata) {
+                if (!EJS_pathtodata.endsWith('/')) EJS_pathtodata+='/';
+                return EJS_pathtodata+file+'?v='+VERSION;
+            } else {
+                return file+'?v='+VERSION;
+            }
+        }();
             scriptTag.parentNode.insertBefore(script, scriptTag);
             script.onload = resolve;
-        })
+        });
     }
+        
+        
     const isIpad = /Macintosh/i.test(navigator.userAgent) && navigator.maxTouchPoints && navigator.maxTouchPoints > 1;
     if (('undefined' != typeof EJS_DEBUG_XX && true === EJS_DEBUG_XX) ||
         /(iPad|iPhone|iPod)/gi.test(navigator.platform) || isIpad) {
