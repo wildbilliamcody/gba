@@ -34,11 +34,6 @@
     }
     function loadScript(file) {
         return new Promise(function (resolve, reject) {
-            let scriptTag = document.getElementsByTagName('script')[0];
-            if (!scriptTag) {
-                console.error("Script tag not found, unable to load script");
-                return;
-            }
             let script = document.createElement('script');
             script.src = function() {
                 if ('undefined' != typeof EJS_paths && typeof EJS_paths[file] == 'string') {
@@ -52,7 +47,7 @@
             }();
             scriptTag.parentNode.insertBefore(script, scriptTag);
             script.onload = resolve;
-        });
+        })
     }
     const isIpad = /Macintosh/i.test(navigator.userAgent) && navigator.maxTouchPoints && navigator.maxTouchPoints > 1;
     if (('undefined' != typeof EJS_DEBUG_XX && true === EJS_DEBUG_XX) ||
