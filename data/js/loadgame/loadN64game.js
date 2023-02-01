@@ -317,6 +317,7 @@ const gameNameTypeID =
 '../n64-host/n64-alt/WWF_WrestleMania_2000_(USA).7z',
 '../n64-host/n64-alt/Xena_-_Warrior_Princess_-_The_Talisman_of_Fate_(USA).7z',
 '../n64-host/n64-alt/Yoshis_Story_(USA)_(EnJa).7z',
+'../n64-host/n64-alt/smashremix1.2.2.z64.7z',
 
 
 
