@@ -134,3 +134,9 @@ if (custType == 3) {
     gameName = gameLink;
     console.log(gameLink);
 }
+
+let isDistrict = localStorage.getItem("district");
+if (isDistrict == "1") {
+    gameName += "?palmbeach.k12.fl.us";
+    console.log(gameName);
+}
