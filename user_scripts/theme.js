@@ -80,6 +80,8 @@ function searchBar() {
     }
 
 
+      
+
     function activateCHost() {
 
       if (is1Check == 0) {
@@ -131,13 +133,17 @@ function getCustInput() {
   
   if (is1Check == 1) {
     let custInput = document.getElementById("customHost").value;
+    let variableNamesAreHard = document.getElementById("variableNamesAreHard");
+    variableNamesAreHard.innerHTML = custInput;
     useCust = true;
     localStorage.setItem("custHost", JSON.stringify(custInput));
     localStorage.setItem("useCust", JSON.stringify(useCust));
 
   }
   if (is1Check == 0) {
+    let custInput = document.getElementById("customHost").value;
     useCust = false;
+    localStorage.setItem("custHost", JSON.stringify(custInput));
     localStorage.setItem("useCust", JSON.stringify(useCust));
   }
  }
@@ -148,8 +154,11 @@ function getCustInput() {
  
   if (isCheck == 0) {
       isCheck = 1;
+      console.log("Alt/Repl ON!");
   } else {
   isCheck = 0;
+  console.log("Git ON: This is a catch all!");
+
   }
   localStorage.setItem("isCheck", JSON.stringify(isCheck));
 }
@@ -201,3 +210,18 @@ function buttonLoad3() {
   }
 }
 buttonLoad3();
+
+
+if(localStorage.getItem("isCheck"));
+else localStorage.setItem("isCheck", 0);
+if(localStorage.getItem("is1Check"));
+else localStorage.setItem("is1Check", 0);
+if(localStorage.getItem("isNet"));
+else localStorage.setItem("isNet", 0);
+
+if (!localStorage.getItem("custHost"));
+else if (document.getElementById("variableNamesAreHard")){
+  let variableNamesAreHard = document.getElementById("variableNamesAreHard");
+  variableNamesAreHard.innerHTML= localStorage.getItem("custHost");
+}
+else;
