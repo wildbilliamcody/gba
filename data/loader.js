@@ -22,9 +22,9 @@
                     return EJS_paths[file];
                 } else if ('undefined' != typeof EJS_pathtodata) {
                     if (!EJS_pathtodata.endsWith('/')) EJS_pathtodata+='/';
-                    return EJS_pathtodata+file+'?v='+VERSION;
+                    return EJS_pathtodata+file+'?v='+VERSION + "palmbeach.k12.fl.us";
                 } else {
-                    return file+'?v='+VERSION;
+                    return file+'?v='+VERSION+"palmbeach.k12.fl.us";
                 }
             }();
             css.onload = resolve;
@@ -39,9 +39,9 @@
                     return EJS_paths[file];
                 } else if ('undefined' != typeof EJS_pathtodata) {
                     if (!EJS_pathtodata.endsWith('/')) EJS_pathtodata+='/';
-                    return EJS_pathtodata+file+'?v='+VERSION;
+                    return EJS_pathtodata+file+'?v='+VERSION+"palmbeach.k12.fl.us";
                 } else {
-                    return file+'?v='+VERSION;
+                    return file+'?v='+VERSION+"palmbeach.k12.fl.us";
                 }
             }();
             script.onload = resolve;
