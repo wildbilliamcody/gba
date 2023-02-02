@@ -141,9 +141,9 @@ function getCustInput() {
 
   }
   if (is1Check == 0) {
-    let custInput = document.getElementById("customHost").value;
+    // let custInput = document.getElementById("customHost").value;
     useCust = false;
-    localStorage.setItem("custHost", JSON.stringify(custInput));
+    // localStorage.setItem("custHost", JSON.stringify(custInput));
     localStorage.setItem("useCust", JSON.stringify(useCust));
   }
  }
@@ -222,6 +222,6 @@ else localStorage.setItem("isNet", 0);
 if (!localStorage.getItem("custHost"));
 else if (document.getElementById("variableNamesAreHard")){
   let variableNamesAreHard = document.getElementById("variableNamesAreHard");
-  variableNamesAreHard.innerHTML= localStorage.getItem("custHost");
+  variableNamesAreHard.innerHTML= JSON.parse(localStorage.getItem("custHost"));
 }
 else;
