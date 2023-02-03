@@ -2096,7 +2096,7 @@ window.EJS_main = function(_0xa88a13, _0x17edbf, _0x2c1832) {
                             }
                         };
                         let _0x3641d6 = function(_0x16049b, _0x55a075) {
-                            let path = (_this.customPaths && typeof _this.customPaths[_0x16049b] == 'string') ? _this.customPaths[_0x16049b] : ((_this.coreVer === 2) ? (_this.dataPath+'cores/'+_0x16049b+'?v='+_0x55a075 + "palmbeach.k12.fl.us") : (_this.dataPath+'old/'+_0x16049b+'?v='+_0x55a075));
+                            let path = (_this.customPaths && typeof _this.customPaths[_0x16049b] == 'string') ? _this.customPaths[_0x16049b] : ((_this.coreVer === 2) ? (_this.dataPath+'cores/'+_0x16049b+'?v='+_0x55a075) : (_this.dataPath+'old/'+_0x16049b+'?v='+_0x55a075));
                             _0x550f17.a.get(path, {
                                 'onDownloadProgress': function(e) {
                                     let progress = e.total ? ' '+Math.floor(e.loaded / e.total * 100).toString()+'%' : ' '+(e.loaded/1048576).toFixed(2)+'MB';
