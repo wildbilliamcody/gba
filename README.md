@@ -28,7 +28,7 @@ Github profiles:
 [Math Study (Org)](https://github.com/math-study)
 
 [EmulatorJS](https://github.com/EmulatorJS/EmulatorJS)
-
+ 
 
 ### [Ultimate Guide to Contributing to the New Emulator!](emulatorjs/docs/UltimateGuide.md)
 
